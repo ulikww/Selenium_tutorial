@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://ec2-52-31-177-160.eu-west-1.compute.amazonaws.com/" />
+<title>Entrance to the administration panel</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Entrance to the administration panel</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/open-eshop-2.0.1/oc-panel/auth/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=section#page form.auth input[name='email'] </td>
+	<td>demo@open-eshop.com</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=section#page form.auth input[name='password'] </td>
+	<td>demo</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=section#page form.auth button[type='submit'] </td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Welcome - open-eshop</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
